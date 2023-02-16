@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button';
+import EventHandler from './components/EventHandler';
 import { GreetUser } from './components/GreetUser';
 import { Header } from './components/Header';
 import { Oscar } from './components/Oscar';
@@ -59,7 +60,11 @@ function App() {
       {/* event handler is passing as props without parameter */}
       <Button handleClick={handleClick} />
 
+      {/* useState hook use */}
       <UseState />
+
+      {/* input event handler */}
+      <EventHandler />
     </div>
   );
 }
