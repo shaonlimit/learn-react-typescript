@@ -1,11 +1,13 @@
 import './App.css';
 import Button from './components/Button';
 import EventHandler from './components/EventHandler';
+import FormEventHandler from './components/FormEventHandler';
 import { GreetUser } from './components/GreetUser';
 import { Header } from './components/Header';
 import { Oscar } from './components/Oscar';
 import Person from './components/Person';
 import { ProductList } from './components/ProductList';
+import ReducerType from './components/ReducerType';
 import Status from './components/Status';
 import StyleComponent from './components/StyleComponent';
 import UseState from './components/UseState';
@@ -65,6 +67,12 @@ function App() {
 
       {/* input event handler */}
       <EventHandler />
+
+      {/* Form event handler type */}
+      <FormEventHandler />
+
+      {/* userReducer Type */}
+      <ReducerType />
     </div>
   );
 }
