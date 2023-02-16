@@ -1,14 +1,22 @@
-import React from 'react';
+// Basic Props Handling in TypeScript
+
 type GreetProps = {
   name: string;
-  count: number;
+  messaggeCount: number;
+  isLoggedIn: boolean;
 };
 
 export const GreetUser = (props: GreetProps) => {
   return (
-    <div>
-      <h1>Hello {props.name}, Welcome to TypeScript!</h1>
-      <h2>The completed course is: {props.count}</h2>
-    </div>
+    <>
+      {props.isLoggedIn ? (
+        <div>
+          <h1>Hello {props.name}, Welcome to TypeScript!</h1>
+          <h2>You have {props.messaggeCount} unread message.</h2>
+        </div>
+      ) : (
+        <h1>Welcome, Guest! Please logged in.....</h1>
+      )}
+    </>
   );
 };
